@@ -322,7 +322,7 @@ class TurnTuner extends OpMode {
  */
 class ForwardVelocityTuner extends OpMode {
     private final ArrayList<Double> velocities = new ArrayList<>();
-    public static double DISTANCE = 48;
+    public static double DISTANCE = 24;
     public static double RECORD_NUMBER = 10;
 
     private boolean end;
@@ -1071,8 +1071,8 @@ class CentripetalTuner extends OpMode {
 class Triangle extends OpMode {
 
     private final Pose startPose = new Pose(0, 0, Math.toRadians(0));
-    private final Pose interPose = new Pose(24, -24, Math.toRadians(90));
-    private final Pose endPose = new Pose(24, 24, Math.toRadians(45));
+    private final Pose interPose = new Pose(5, -5, Math.toRadians(90));
+    private final Pose endPose = new Pose(5, 5, Math.toRadians(45));
 
     private PathChain triangle;
 
@@ -1132,7 +1132,7 @@ class Triangle extends OpMode {
  * @version 1.0, 3/12/2024
  */
 class Circle extends OpMode {
-    public static double RADIUS = 10;
+    public static double RADIUS = 7.5;
     private PathChain circle;
 
     public void start() {
